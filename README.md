@@ -30,11 +30,11 @@ Or access application in web browser at:
 https://github.com/jmcmahon01/Josephino-s-Pizzaria
 
 ## Tests
-Describe: customPizza()
+Describe: CustomPizza()
 
 Test: "It should return a custom pizza object with properties: size and toppings"
-Code: const testPizza = new Pizza(["pepperoni", "pineapple", "jalapeńo"], "large");
-Expected Output: Pizza { toppings: ["pepperoni", "pineapple", "jalapeńo"], size: "large" }
+Code: const testPizza = new Pizza("large", ["pepperoni", "pineapple", "jalapeńo"]);
+Expected Output: CustomPizza {size: "large", toppings: ["pepperoni", "pineapple", "jalapeńo"]}
 
 
 
