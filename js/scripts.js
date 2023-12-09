@@ -30,10 +30,11 @@ window.addEventListener("load", function () {
     const pizzaToppings = Array.from(document.getElementById("toppings").selectedOptions).map(option => option.value);
     const pizza = new CustomPizza(pizzaSize, pizzaToppings);
 
-    document.getElementById('displaySize').textContent = size;
-    document.getElementById('displayToppings').textContent = toppings;
+    document.getElementById('displaySize').textContent = pizzaSize;
+    document.getElementById('displayToppings').textContent = pizzaToppings.join(", ");
     document.getElementById('displayPrice').textContent = pizza.calculatePrice();
 
     document.getElementById("pizzaDetails").removeAttribute("class");
+
   })
 })
