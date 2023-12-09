@@ -21,6 +21,10 @@ CustomPizza.prototype.calculatePrice = function () {
 }
 
 //UI Logic
+function toggleList(listId) {
+  const list = document.getElementById(listId);
+  list.style.display = list.style.display === 'none' ? 'block' : 'none';
+}
 window.addEventListener("load", function () {
   const form = document.querySelector("form");
 

@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(-45deg, #e5dedb, #786f72, #b8dfed, #b0f6e6);
+  background: linear-gradient(-45deg, #e5dedb, #786f72, #bfa0a2, #d49bf8);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   height: 100vh;
@@ -24,7 +24,7 @@ body {
   font-weight: bold;
   color: rgb(55, 1, 1);
   text-align: center;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 .p {
@@ -32,7 +32,7 @@ body {
   font-size: x-large;
   color: rgb(71, 5, 5);
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .img {
@@ -41,15 +41,31 @@ body {
   transform: translate(-50%);
   border: 10px solid rgb(55, 1, 1);
   width: 400px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.new {
+.collapsible {
   font-style: italic;
-  color: rgb(54, 1, 1);
-  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.collapsible:hover {
+  background-color: #eec4c4;
+}
+
+.collapsible ul {
+  display: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.collapsible ul li {
+  padding: 5px;
 }
 
 form {

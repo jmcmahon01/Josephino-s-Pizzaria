@@ -13,20 +13,23 @@
   <p class="p">High class, low prices, real food, period</p>
   <img class="img" src="images/pie.jpg" alt="image of pizza" />
 
-  <div class="new">
+  <div class="collapsible" onclick="toggleList('sizesList')">
     <p>Sizes:</p>
-    <ul>
+    <ul id="sizesList">
       <li>small - 10.00</li>
       <li>medium - 15.00</li>
       <li>large - 20.00</li>
     </ul>
+  </div>
+  
+  <div class="collapsible" onclick="toggleList('toppingsList')">
     <p>Toppings ($1.00 per topping):</p>
-    <ul>
+    <ul id="toppingsList">
       <li>cheese</li>
       <li>pepperoni</li>
       <li>onions</li>
       <li>olives</li>
-      <li>jalapeńos</li>
+      <li>jalapeños</li>
       <li>pineapple</li>
       <li>canadian bacon</li>
       <li>roasted garlic</li>
