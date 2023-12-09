@@ -27,6 +27,7 @@ function toggleList(listId) {
 }
 window.addEventListener("load", function () {
   const form = document.querySelector("form");
+  const pizzaDetails = document.getElementById('pizzaDetails');
 
   form.addEventListener("submit", function (e) {
     e.preventDefault();
@@ -40,9 +41,12 @@ window.addEventListener("load", function () {
 
     document.getElementById("pizzaDetails").removeAttribute("class");
 
+    pizzaDetails.scrollIntoView({ behavior: 'smooth' });
+
     document.getElementById('resubmitButton').addEventListener('click', function () {
       document.querySelector("form").reset();
       document.getElementById('pizzaDetails').setAttribute("class", "hidden");
+      document.body.scrollIntoView({ behavior: 'smooth' });
     });
   })
 })
