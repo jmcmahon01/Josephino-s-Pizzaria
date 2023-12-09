@@ -36,5 +36,10 @@ window.addEventListener("load", function () {
 
     document.getElementById("pizzaDetails").removeAttribute("class");
 
+    document.getElementById('resubmitButton').addEventListener('click', function () {
+      document.querySelector("form").reset();
+      document.getElementById('pizzaDetails').setAttribute("class", "hidden");
+    });
   })
 })
+
