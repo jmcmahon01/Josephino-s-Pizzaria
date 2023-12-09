@@ -15,7 +15,7 @@
 
 ## Description
 
-This website allows user to order a pizza (small, medium, or large) and choose toppings from the toppings list. Once the size of the pizza and all desired toppings are selected, it will calculate the price of your pizza based on the size and toppings seleted. If no toppings are selected (cheese pizza) the price will be the initial price of the size of the pizza. Each additional topping will increase the total price of the pizza by how much each individual topping costs.
+This website allows user to order a pizza (small, medium, or large) and choose toppings from the toppings list. Once the size of the pizza and all desired toppings are selected, it will calculate the price of your pizza based on the size and toppings seleted. Each additional topping will increase the total price of the pizza by one dollar. 
 ## Setup/Installation Requirements
 
 1. Clone the repository to your local machine: 

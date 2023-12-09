@@ -11,4 +11,10 @@ CustomPizza.prototype.calculatePrice = function () {
   } else if (this.pizzaSize === "large") {
     basePrice = 20;
   }
+  let toppingsCost = 0;
+  if (this.pizzaToppings.length > 0) {
+    toppingsCost = this.pizzaToppings.length;
+  }
+  const totalPrice = basePrice + toppingsCost;
+  return totalPrice;
 }
