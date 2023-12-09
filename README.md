@@ -39,9 +39,14 @@ Expected Output: CustomPizza {size: "large", toppings: ["pepperoni", "pineapple"
 Describe: : calculatePrice()
 
 Test: "prototype method should calculate the price of the pizza based on which size is selected: small: 10, medium: 15, or large: 20"
-Code: const testPizza = new CustomPizza(size: "medium", toppings: [ "cheese" ])
+Code: const testPizza = new CustomPizza(size: "medium", toppings: [ "cheese" ]);
       testPizza.calculatePrice(); 
 Expected Output:15
+
+Test: "method should now take into account size and add 1 dollar per topping selected"
+Code: const testPizza = new CustomPizza ("large", ["cheese", "pepperoni", "pineapple", "jalapeńo"]);
+Expected Output: 24
+
 
 
 
