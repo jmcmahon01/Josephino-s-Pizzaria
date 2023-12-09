@@ -63,7 +63,7 @@ Expected Output: 24
 
 
 ## Known Bugs
-* No known bugs at this time
+* there is a delay in the hover functionality on the collapsible sizes and toppings divs. You have to click twice initially, then it functions normally from there.
 
 
 ## License
