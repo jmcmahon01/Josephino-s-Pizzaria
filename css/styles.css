@@ -47,7 +47,9 @@ body {
 
 .collapsible {
   font-style: italic;
-  color: maroon cursor: pointer;
+  font-weight: bold;
+  color: rgb(110, 5, 5);
+  cursor: pointer;
   padding: 10px;
   border: 1px solid #ccc;
   margin-bottom: 10px;
@@ -85,7 +87,7 @@ form {
 .custom-btn {
   width: 130px;
   height: 40px;
-  color: #ee82cc;
+  color: #e498cc;
   border-radius: 5px;
   padding: 10px 25px;
   font-family: 'Lato', sans-serif;
