@@ -44,29 +44,31 @@
         <option value="medium">medium</option>
         <option value="large">large</option>
       </select>
-      <label for="toppings">Choose at least 1 or more toppings</label>
-      <select id="toppings" name="toppings" size="11" multiple>
-        <option value="cheese">Cheese</option>
-        <option value="pepperoni">pepperoni</option>
-        <option value="onions">onions</option>
-        <option value="olives">olives</option>
-        <option value="jalapeńos">jalapeńos</option>
-        <option value="pineapple">pineapple</option>
-        <option value="canadian bacon">canadian bacon</option>
-        <option value="roasted garlic">roasted garlic</option>
-        <option value="sausage">sausage</option>
-        <option value="bacon">bacon</option>
-        <option value="basil">basil</option>
-      </select>
+      <br>
+      <label for="toppings">Choose toppings:</label>
+      <div id="toppingsContainer">
+        <label for="cheese">Cheese</label>
+        <input type="checkbox" id="cheese" name="toppings" value="cheese">
+        <label for="pepperoni">Pepperoni</label>
+        <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni">
+        <label for="olives">Olives</label>
+        <input type="checkbox" id="olives" name="toppings" value="olives">
+        <label for="onions">Onions</label>
+        <input type="checkbox" id="onions" name="toppings" value="onions">
+        <label for="pineapple">Pineapple</label>
+        <input type="checkbox" id="pineapple" name="toppings" value="pineapple">
+        <label for="jalapeńos">Jalapeńos</label>
+        <input type="checkbox" id="jalapeńos" name="toppings" value="jalapeńos">
+      </div>
       <input type="submit" value="Submit">
     </form>
   </div>
 
   <div id="pizzaDetails" class="hidden">
-    <h2>Pizza Details</h2>
-    <p><strong>Size:</strong> <span id="displaySize"></span></p>
-    <p><strong>Toppings:</strong> <span id="displayToppings"></span></p>
-    <p><strong>Calculated Price:</strong> Price$:<span id="displayPrice"></span></p>
+    <h2 class="p">Pizza Details</h2>
+    <p class="p"><strong>Size:</strong> <span id="displaySize"></span></p>
+    <p class="p"><strong>Toppings:</strong> <span id="displayToppings"></span></p>
+    <p class="p"><strong>Calculated Price:</strong> Price$:<span id="displayPrice"></span></p>
   </div>
   <script src="js/scripts.js"></script>
 

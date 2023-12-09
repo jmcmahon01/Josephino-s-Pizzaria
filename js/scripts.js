@@ -27,7 +27,7 @@ window.addEventListener("load", function () {
   form.addEventListener("submit", function (e) {
     e.preventDefault();
     const pizzaSize = document.getElementById("size").value;
-    const pizzaToppings = Array.from(document.getElementById("toppings").selectedOptions).map(option => option.value);
+    const pizzaToppings = Array.from(document.querySelectorAll('input[name="toppings"]:checked')).map(checkbox => checkbox.value);
     const pizza = new CustomPizza(pizzaSize, pizzaToppings);
 
     document.getElementById('displaySize').textContent = pizzaSize;

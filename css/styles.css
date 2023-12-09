@@ -28,6 +28,12 @@ body {
   padding: 10px;
 }
 
+#toppingsContainer input[type="checkbox"] {
+  display: block;
+  margin-bottom: 5px;
+  /* Adjust the margin as needed */
+}
+
 .hidden {
   display: none;
 }
