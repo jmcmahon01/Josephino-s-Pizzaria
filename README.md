@@ -33,8 +33,15 @@ https://github.com/jmcmahon01/Josephino-s-Pizzaria
 Describe: CustomPizza()
 
 Test: "It should return a custom pizza object with properties: size and toppings"
-Code: const testPizza = new Pizza("large", ["pepperoni", "pineapple", "jalapeńo"]);
+Code: const testPizza = new CustomPizza("large", ["pepperoni", "pineapple", "jalapeńo"]);
 Expected Output: CustomPizza {size: "large", toppings: ["pepperoni", "pineapple", "jalapeńo"]}
+
+Describe: : calculatePrice()
+
+Test: "prototype method should calculate the price of the pizza based on which size is selected: small: 10, medium: 15, or large: 20"
+Code: const testPizza = new CustomPizza(size: "medium", toppings: [ "cheese" ])
+      testPizza.calculatePrice(); 
+Expected Output:15
 
 
 
