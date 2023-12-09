@@ -1,3 +1,4 @@
+//Business Logic
 function CustomPizza(pizzaSize, pizzaToppings) {
   this.pizzaSize = pizzaSize;
   this.pizzaToppings = pizzaToppings;
@@ -18,3 +19,8 @@ CustomPizza.prototype.calculatePrice = function () {
   const totalPrice = basePrice + toppingsCost;
   return totalPrice;
 }
+
+//UI Logic
+window.addEventListener("load", function() {
+  
+})
