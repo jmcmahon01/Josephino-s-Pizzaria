@@ -39,7 +39,7 @@ body {
   left: 50%;
   position: relative;
   transform: translate(-50%);
-  border: 10px solid rgb(55, 1, 1);
+  border: 10px solid rgb(173, 164, 164);
   width: 400px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -47,7 +47,7 @@ body {
 
 .collapsible {
   font-style: italic;
-  cursor: pointer;
+  color: maroon cursor: pointer;
   padding: 10px;
   border: 1px solid #ccc;
   margin-bottom: 10px;
@@ -85,7 +85,7 @@ form {
 .custom-btn {
   width: 130px;
   height: 40px;
-  color: #fff;
+  color: #ee82cc;
   border-radius: 5px;
   padding: 10px 25px;
   font-family: 'Lato', sans-serif;
@@ -116,8 +116,8 @@ form {
 }
 
 .btn-1 span {
-  background: rgb(0, 172, 238);
-  background: linear-gradient(0deg, rgba(0, 172, 238, 1) 0%, rgba(2, 126, 251, 1) 100%);
+  background: rgb(93, 5, 5);
+  background: linear-gradient(0deg, rgb(86, 2, 2) 0%, rgb(172, 43, 43) 100%);
   display: block;
   position: absolute;
   width: 130px;
@@ -176,14 +176,6 @@ form {
   -moz-transform: rotateX(-90deg);
   transform: rotateX(-90deg);
 }
-
-.btn-2 {
-  background: rgb(96, 9, 240);
-  background: linear-gradient(0deg, rgba(96, 9, 240, 1) 0%, rgba(129, 5, 240, 1) 100%);
-  border: none;
-
-}
-
 
 .hidden {
   display: none;
