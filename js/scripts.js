@@ -21,6 +21,19 @@ CustomPizza.prototype.calculatePrice = function () {
 }
 
 //UI Logic
-window.addEventListener("load", function() {
-  
+window.addEventListener("load", function () {
+  const form = document.querySelector("form");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const pizzaSize = document.getElementById("size").value;
+    const pizzaToppings = Array.from(document.getElementById("toppings").selectedOptions).map(option => option.value);
+    const pizza = new CustomPizza(pizzaSize, pizzaToppings);
+
+    document.getElementById('displaySize').textContent = size;
+    document.getElementById('displayToppings').textContent = toppings;
+    document.getElementById('displayPrice').textContent = pizza.calculatePrice();
+
+    document.getElementById("pizzaDetails").removeAttribute("class");
+  })
 })

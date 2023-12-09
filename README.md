@@ -64,7 +64,8 @@ Expected Output: 24
 
 ## Known Bugs
 
-* No known bugs currently
+* When hidden div (pizzaDetails) is displayed the size and toppings are each returned as: [object HTMLSelectElement] instead of the users input. 
+* can not select multiple toppings currently. Only one option is selected and 1 dollar added on to price according to size
 
 
 ## License

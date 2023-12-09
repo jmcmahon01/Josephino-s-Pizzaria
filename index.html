@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script src="js/scripts.js"></script>
   <title>Josephino's Pizzaria</title>
 </head>
 
@@ -13,6 +12,7 @@
   <h1 class="h1"> Josephino's Pizzaria</h1>
   <p class="p">High class, low prices, real food, period</p>
   <img class="img" src="images/pie.jpg" alt="image of pizza" />
+
   <div>
     <p>Sizes:</p>
     <ul>
@@ -35,6 +35,7 @@
       <li>basil</li>
     </ul>
   </div>
+
   <div>
     <form>
       <label for="size">Choose your size</label>
@@ -60,6 +61,15 @@
       <input type="submit" value="Submit">
     </form>
   </div>
+
+  <div id="pizzaDetails" class="hidden">
+    <h2>Pizza Details</h2>
+    <p><strong>Size:</strong> <span id="displaySize"></span></p>
+    <p><strong>Toppings:</strong> <span id="displayToppings"></span></p>
+    <p><strong>Calculated Price:</strong> Price$:<span id="displayPrice"></span></p>
+  </div>
+  <script src="js/scripts.js"></script>
+
 </body>
 
 </html>
