@@ -32,13 +32,15 @@ form {
   text-align: center;
 }
 
-label,
-select,
-#toppingsContainer {
-  display: inline-block;
-  vertical-align: top;
-  margin: 10px;
+#toppingsContainer label {
+  display: block;
+  margin-bottom: 5px; /* Adjust the margin as needed */
 }
+
+#toppingsContainer input[type="checkbox"] {
+  margin-right: 5px; /* Adjust the margin as needed */
+}
+
 
 .hidden {
   display: none;
