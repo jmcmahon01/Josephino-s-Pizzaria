@@ -27,7 +27,7 @@ code .
 4. Open index.html file with live server
 
 Or access application in web browser at: 
-https://github.com/jmcmahon01/Josephino-s-Pizzaria
+https://jmcmahon01.github.io/Josephino-s-Pizzaria
 
 ## Tests
 Describe: CustomPizza()
