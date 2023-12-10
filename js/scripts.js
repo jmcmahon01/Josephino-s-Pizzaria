@@ -20,15 +20,21 @@ CustomPizza.prototype.calculatePrice = function () {
   return totalPrice;
 }
 
+
 //UI Logic
-function toggleList(listId) {
-  const list = document.getElementById(listId);
-  list.style.display = list.style.display === 'none' ? 'block' : 'none';
-}
 window.addEventListener("load", function () {
   const form = document.querySelector("form");
   const pizzaDetails = document.getElementById('pizzaDetails');
+  const collapsibles = document.querySelectorAll('.collapsible');
+  collapsibles.forEach(function (collapsible) {
+    const listId = collapsible.querySelector('ul').id;
+    const list = document.getElementById(listId);
+    list.style.display = 'none';
 
+    collapsible.addEventListener('click', function () {
+      list.style.display = list.style.display === 'none' ? 'block' : 'none';
+    });
+  });
   form.addEventListener("submit", function (e) {
     e.preventDefault();
     const pizzaSize = document.getElementById("size").value;
